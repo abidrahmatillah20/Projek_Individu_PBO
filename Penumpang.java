@@ -15,3 +15,15 @@ public class Penumpang {
     public int getUmur() { return umur; }
     public boolean getHamil() { return hamil; }
     public int getSaldo() { return saldo; }
+
+    public void tambahSaldo(int n) { saldo += n; }
+    public void kurangiSaldo(int n) { saldo -= n; }
+
+    public boolean prioritas() {
+        return umur > 60 || umur < 10 || hamil;
+    }
+
+    public String toString() {
+        return "[ID " + id + ", Umur " + umur + ", Hamil=" + hamil + "]";
+    }
+}
